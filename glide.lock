@@ -1,23 +1,6 @@
-hash: 4f7e997e7943e2964b56fce60b7fd151c2f082822b5e811e5433c21062db3985
-updated: 2018-01-17T10:11:51.310714628+08:00
+hash: 2df9ee6fa6f1dd078e867879cb8d9778b6f6c64ce9bc0c995a48cc6527c4f0e3
+updated: 2018-01-17T12:56:53.997558763+08:00
 imports:
-- name: github.com/adohe/kube2haproxy
-  version: 2e893ec68a034f34dcd101df5aa2871a14c5f7ae
-  subpackages:
-  - app
-  - app/options
-  - proxy
-  - proxy/controller
-  - proxy/template
-  - util/abool
-  - util/cache
-  - util/config
-  - util/flowcontrol
-  - util/haproxy
-  - util/ipaddr
-  - util/keepalived
-  - util/ratelimiter
-  - util/template
 - name: github.com/beorn7/perks
   version: b965b613227fddccbfffe13eae360ed3fa822f8d
   subpackages:
@@ -99,40 +82,4 @@ imports:
   - context
 - name: gopkg.in/yaml.v2
   version: 53feefa2559fb8dfa8d81baad31be332c97d6c77
-- name: k8s.io/kubernetes
-  version: ""
-  subpackages:
-  - pkg/api
-  - pkg/apimachinery
-  - pkg/apis/authorization
-  - pkg/apis/autoscaling
-  - pkg/apis/batch
-  - pkg/apis/componentconfig
-  - pkg/apis/extensions
-  - pkg/apis/metrics
-  - pkg/auth/user
-  - pkg/capabilities
-  - pkg/client/cache
-  - pkg/client/metrics
-  - pkg/client/restclient
-  - pkg/client/transport
-  - pkg/client/typed/discovery
-  - pkg/client/unversioned
-  - pkg/client/unversioned/clientcmd
-  - pkg/client/unversioned/clientcmd/api
-  - pkg/conversion
-  - pkg/fields
-  - pkg/healthz
-  - pkg/kubelet/qos
-  - pkg/labels
-  - pkg/master/ports
-  - pkg/runtime
-  - pkg/types
-  - pkg/util
-  - pkg/util/runtime
-  - pkg/util/sets
-  - pkg/util/wait
-  - pkg/version
-  - pkg/watch
-  - third_party/forked/reflect
 testImports: []
