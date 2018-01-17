@@ -3,11 +3,12 @@ package ratelimiter
 import (
 	"time"
 
-	"github.com/jing-zhou/kube2haproxy/util/flowcontrol"
+	// "github.com/jing-zhou/kube2haproxy/util/flowcontrol"
+	"k8s.io/client-go/util/flowcontrol"
 
-	kcache "k8s.io/kubernetes/pkg/client/cache"
-	utilruntime "k8s.io/kubernetes/pkg/util/runtime"
-	utilwait "k8s.io/kubernetes/pkg/util/wait"
+	utilruntime "k8s.io/apimachinery/pkg/util/runtime"
+	utilwait "k8s.io/apimachinery/pkg/util/wait"
+	kcache "k8s.io/client-go/tools/cache"
 )
 
 const maxBackOffPeriod time.Duration = 30 * time.Second
