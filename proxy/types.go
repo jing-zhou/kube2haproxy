@@ -3,7 +3,7 @@ package proxy
 import (
 	"fmt"
 
-	"k8s.io/kubernetes/pkg/types"
+	"k8s.io/apimachinery/pkg/types"
 )
 
 // ServiceUnit is an encapsulation of a service, the endpoints that back that service.
