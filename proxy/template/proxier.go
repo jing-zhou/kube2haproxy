@@ -16,9 +16,9 @@ import (
 	"github.com/jing-zhou/kube2haproxy/util/ratelimiter"
 	"github.com/jing-zhou/kube2haproxy/util/template"
 
-	"k8s.io/client-go/tools/clientcmd/api"
-	"k8s.io/kubernetes/pkg/types"
-	"k8s.io/kubernetes/pkg/watch"
+	"k8s.io/apimachinery/pkg/types"
+	"k8s.io/apimachinery/pkg/watch"
+	api "k8s.io/client-go/pkg/api/v1"
 
 	"github.com/golang/glog"
 )
