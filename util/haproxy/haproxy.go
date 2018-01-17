@@ -5,7 +5,7 @@ import (
 	"os/exec"
 	"time"
 
-	"github.com/adohe/kube2haproxy/util/config"
+	"github.com/jing-zhou/kube2haproxy/util/config"
 
 	"github.com/golang/glog"
 )

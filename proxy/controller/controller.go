@@ -7,8 +7,8 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/adohe/kube2haproxy/proxy/template"
-	khcache "github.com/adohe/kube2haproxy/util/cache"
+	"github.com/jing-zhou/kube2haproxy/proxy/template"
+	khcache "github.com/jing-zhou/kube2haproxy/util/cache"
 
 	"k8s.io/kubernetes/pkg/api"
 	"k8s.io/kubernetes/pkg/client/cache"

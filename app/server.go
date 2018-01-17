@@ -9,15 +9,15 @@ import (
 	"strconv"
 	"syscall"
 
-	"github.com/adohe/kube2haproxy/app/options"
-	"github.com/adohe/kube2haproxy/proxy/controller"
-	"github.com/adohe/kube2haproxy/proxy/template"
+	"github.com/jing-zhou/kube2haproxy/app/options"
+	"github.com/jing-zhou/kube2haproxy/proxy/controller"
+	"github.com/jing-zhou/kube2haproxy/proxy/template"
 
-	kubeclient "k8s.io/kubernetes/pkg/client/unversioned"
-	"k8s.io/kubernetes/pkg/client/unversioned/clientcmd"
-	clientcmdapi "k8s.io/kubernetes/pkg/client/unversioned/clientcmd/api"
-	"k8s.io/kubernetes/pkg/healthz"
-	"k8s.io/kubernetes/pkg/util/wait"
+	"k8s.io/apimachinery/pkg/util/wait"
+	"k8s.io/apiserver/pkg/server/healthz"
+	kubeclient "k8s.io/client-go/kubernetes"
+	"k8s.io/client-go/tools/clientcmd"
+	clientcmdapi "k8s.io/client-go/tools/clientcmd/api"
 
 	"github.com/golang/glog"
 	"github.com/prometheus/client_golang/prometheus"

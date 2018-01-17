@@ -8,15 +8,15 @@ import (
 	"sync"
 	"time"
 
-	"github.com/adohe/kube2haproxy/proxy"
-	"github.com/adohe/kube2haproxy/util/abool"
-	utilhaproxy "github.com/adohe/kube2haproxy/util/haproxy"
-	"github.com/adohe/kube2haproxy/util/ipaddr"
-	utilkeepalived "github.com/adohe/kube2haproxy/util/keepalived"
-	"github.com/adohe/kube2haproxy/util/ratelimiter"
-	"github.com/adohe/kube2haproxy/util/template"
+	"github.com/jing-zhou/kube2haproxy/proxy"
+	"github.com/jing-zhou/kube2haproxy/util/abool"
+	utilhaproxy "github.com/jing-zhou/kube2haproxy/util/haproxy"
+	"github.com/jing-zhou/kube2haproxy/util/ipaddr"
+	utilkeepalived "github.com/jing-zhou/kube2haproxy/util/keepalived"
+	"github.com/jing-zhou/kube2haproxy/util/ratelimiter"
+	"github.com/jing-zhou/kube2haproxy/util/template"
 
-	"k8s.io/kubernetes/pkg/api"
+	"k8s.io/client-go/tools/clientcmd/api"
 	"k8s.io/kubernetes/pkg/types"
 	"k8s.io/kubernetes/pkg/watch"
 

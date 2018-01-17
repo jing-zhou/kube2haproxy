@@ -3,8 +3,8 @@ package options
 import (
 	"time"
 
-	utilhaproxy "github.com/adohe/kube2haproxy/util/haproxy"
-	utilkeepalived "github.com/adohe/kube2haproxy/util/keepalived"
+	utilhaproxy "github.com/jing-zhou/kube2haproxy/util/haproxy"
+	utilkeepalived "github.com/jing-zhou/kube2haproxy/util/keepalived"
 
 	"github.com/spf13/pflag"
 )
