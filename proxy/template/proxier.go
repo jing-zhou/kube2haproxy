@@ -16,9 +16,9 @@ import (
 	"github.com/jing-zhou/kube2haproxy/util/ratelimiter"
 	"github.com/jing-zhou/kube2haproxy/util/template"
 
+	api "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/types"
 	"k8s.io/apimachinery/pkg/watch"
-	api "k8s.io/client-go/pkg/api/v1"
 
 	"github.com/golang/glog"
 )
@@ -61,6 +61,7 @@ type Proxier struct {
 	rateLimitedCommitStopChannel chan struct{}
 }
 
+// NewProxier ...
 func NewProxier(cfg ProxierConfig) (*Proxier, error) {
 	proxier := &Proxier{
 		config:                             cfg,
@@ -484,6 +485,7 @@ func (proxier *Proxier) findServiceUnit(name string) (*proxy.ServiceUnit, bool) 
 	return v, ok
 }
 
+// HandleService ...
 func (proxier *Proxier) HandleService(eventType watch.EventType, service *api.Service) error {
 	switch eventType {
 	case watch.Added:
@@ -497,6 +499,7 @@ func (proxier *Proxier) HandleService(eventType watch.EventType, service *api.Se
 	return nil
 }
 
+// HandleEndpoints ...
 func (proxier *Proxier) HandleEndpoints(eventType watch.EventType, endpoints *api.Endpoints) error {
 	switch eventType {
 	case watch.Added:

@@ -10,12 +10,12 @@ import (
 	"github.com/jing-zhou/kube2haproxy/proxy/template"
 	khcache "github.com/jing-zhou/kube2haproxy/util/cache"
 
+	api "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/fields"
 	utilruntime "k8s.io/apimachinery/pkg/util/runtime"
 	"k8s.io/apimachinery/pkg/util/wait"
 	"k8s.io/apimachinery/pkg/watch"
 	kubeclient "k8s.io/client-go/kubernetes"
-	api "k8s.io/client-go/pkg/api/v1"
 	"k8s.io/client-go/tools/cache"
 
 	"github.com/golang/glog"
