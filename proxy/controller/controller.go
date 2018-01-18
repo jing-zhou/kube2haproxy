@@ -36,6 +36,7 @@ type ProxyController struct {
 	endpointsListConsumed bool
 }
 
+// New ...
 func New(client *kubeclient.Client, proxier *template.Proxier, resyncPeriod time.Duration) *ProxyController {
 	serviceEventQueue := khcache.NewEventQueue(cache.MetaNamespaceKeyFunc)
 	cache.NewReflector(createServiceLW(client), &api.Service{}, serviceEventQueue, resyncPeriod).Run()
@@ -91,7 +92,7 @@ func (c *ProxyController) Run(stopCh <-chan struct{}, signalCh <-chan os.Signal)
 	<-stopCh
 }
 
-// HandleServices handles a single Service event and refreshes the proxy backend.
+// HandleService handles a single Service event and refreshes the proxy backend.
 func (c *ProxyController) HandleService() {
 	eventType, service, err := c.NextService()
 	if err != nil {
