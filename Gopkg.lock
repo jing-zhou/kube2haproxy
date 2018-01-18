@@ -266,16 +266,16 @@
   revision = "d670f9405373e636a5a2765eea47fac0c9bc91a4"
 
 [[projects]]
-  branch = "master"
+  branch = "release-1.9"
   name = "k8s.io/apimachinery"
   packages = ["pkg/api/errors","pkg/api/meta","pkg/api/resource","pkg/apimachinery","pkg/apimachinery/announced","pkg/apimachinery/registered","pkg/apis/meta/v1","pkg/apis/meta/v1/unstructured","pkg/apis/meta/v1alpha1","pkg/conversion","pkg/conversion/queryparams","pkg/fields","pkg/labels","pkg/runtime","pkg/runtime/schema","pkg/runtime/serializer","pkg/runtime/serializer/json","pkg/runtime/serializer/protobuf","pkg/runtime/serializer/recognizer","pkg/runtime/serializer/streaming","pkg/runtime/serializer/versioning","pkg/selection","pkg/types","pkg/util/cache","pkg/util/clock","pkg/util/diff","pkg/util/errors","pkg/util/framer","pkg/util/intstr","pkg/util/json","pkg/util/net","pkg/util/rand","pkg/util/runtime","pkg/util/sets","pkg/util/validation","pkg/util/validation/field","pkg/util/wait","pkg/util/yaml","pkg/version","pkg/watch","third_party/forked/golang/reflect"]
-  revision = "bc918d4f73e11cb3110730ec8e8ee02c58d6267c"
+  revision = "68f9c3a1feb3140df59c67ced62d3a5df8e6c9c2"
 
 [[projects]]
-  branch = "master"
+  branch = "release-1.9"
   name = "k8s.io/apiserver"
   packages = ["pkg/server/healthz","pkg/util/flag","pkg/util/logs"]
-  revision = "ef53d4c744f39f4a32f9b8ed06f7254daecc1291"
+  revision = "2a1092aaa7202e8f9b188281ff9424a014ce61c2"
 
 [[projects]]
   name = "k8s.io/client-go"
@@ -283,9 +283,15 @@
   revision = "d92e8497f71b7b4e0494e5bd204b48d34bd6f254"
   version = "v4.0.0"
 
+[[projects]]
+  branch = "master"
+  name = "k8s.io/kube-openapi"
+  packages = ["pkg/common"]
+  revision = "a07b7bbb58e7fdc5144f8d7046331d29fc9ad3b3"
+
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "c09374b8afdbd3bc58e4ba63d0eea6f02d009258e70f47dd999d618a7c3e637f"
+  inputs-digest = "705d15e8ae1ebe287069f8481d1d6b0f6f5edb9fdd456b7f989ce752093aa428"
   solver-name = "gps-cdcl"
   solver-version = 1
