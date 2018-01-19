@@ -38,15 +38,15 @@
   name = "github.com/vishvananda/netlink"
 
 [[constraint]]
-  branch = "release-1.9"
+  branch = "master"
   name = "k8s.io/api"
 
 [[constraint]]
-  branch = "release-1.9"
+  branch = "master"
   name = "k8s.io/apimachinery"
 
 [[constraint]]
-  branch = "release-1.9"
+  branch = "master"
   name = "k8s.io/apiserver"
 
 [[constraint]]
