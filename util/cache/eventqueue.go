@@ -35,9 +35,9 @@ import (
 // events.  This is necessary because the Store API does not receive the deleted state on a
 // watch.Deleted event (though this state is delivered by the watch API itself, it is not passed on
 // to the reflector Store).
-
 // Content of this package was borrowed from openshift/origin.
 
+// EventQueue ...
 type EventQueue struct {
 	lock   sync.RWMutex
 	cond   sync.Cond
@@ -60,6 +60,7 @@ var _ kcache.Store = &EventQueue{}
 // Describes the effect of processing a watch event on the event queue's state.
 type watchEventEffect string
 
+// EventQueueStopped ...
 type EventQueueStopped struct{}
 
 const (
