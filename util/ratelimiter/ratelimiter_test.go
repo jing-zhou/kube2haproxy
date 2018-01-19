@@ -14,7 +14,7 @@ type handler struct {
 func (h *handler) handle() error {
 	h.Lock()
 	defer h.Unlock()
-	h._counter += 1
+	h._counter++
 	return nil
 }
 
