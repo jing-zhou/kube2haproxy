@@ -351,10 +351,9 @@ func (eq *EventQueue) Replace(objects []interface{}, resourceVersion string) err
 }
 
 // Resync ... need detailed implementation
-func (eq *EventQueue) Resync() error {
-
-	return nil
-}
+//func (eq *EventQueue) Resync() error {
+//	return nil
+//}
 
 // ListConsumed indicates whether the items queued by a List/Relist
 // operation have been consumed.
